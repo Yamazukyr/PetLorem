@@ -107,14 +107,14 @@
             Doc Flexbox: https://getbootstrap.com/docs/5.3/utilities/flex/#enable-flex-behaviors
         -->
         <section id="servicos" class="container-fluid gradiente py-5">
-            <div class="container ">
+            <div class="container">
             <!-- Título -->
                 <h1 class="text-center">Serviços</h1>
                 <!-- Linha com 4 cards de serviços -->
                 <!-- aplique os conceitos de flexbox para alinhar os cards -->
 
-                <div class="d-flex justify-content-between">
-                    <div class="card" style="width: 18rem;">
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div class="card my-3" style="width: 18rem;">
                         <img src="cart1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -122,7 +122,7 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card my-3" style="width: 18rem;">
                         <img src="cart2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -130,7 +130,7 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-                        <div class="card" style="width: 18rem;">
+                        <div class="card my-3" style="width: 18rem;">
                         <img src="cart3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -138,7 +138,7 @@
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card my-3" style="width: 18rem;">
                         <img src="cart4.png" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -149,7 +149,7 @@
                 </div>
             </div>
         </section>
-
+            
         <!-- ================= NOSSA EQUIPE =================
             Estrutura: Grid + Imagens arredondadas
             Doc Grid: https://getbootstrap.com/docs/5.0/layout/grid/
@@ -157,6 +157,35 @@
         -->
         <section id="nossaEquipe" class="container-fluid my-5">
             <div class="container">
+                <h1 class="text-center">Nossa Equipe</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam doloribus, mollitia non nostrum harum ab maxime, alias dolores earum praesentium cumque rem. Odit, ullam voluptates eaque iusto id commodi? Non voluptatibus maxime laudantium, est accusamus natus ipsum, placeat modi, dolores quidem tempora ea ut dolor facilis alias aspernatur! Possimus vero maxime modi dolore earum excepturi nisi molestiae autem, nulla temporibus amet veniam placeat sint illum. Omnis voluptas eveniet, sequi sit harum odio ducimus aperiam quam nisi qui eaque amet nostrum minima quia maxime numquam iure corrupti sed voluptatem perferendis? Sapiente delectus eos iste magni porro! Quo consequuntur dolorum voluptate.</p>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="jaqueline.png" class="rounded-circle mb-2" alt="Membro da Equipe 1" width="150">
+                        <h5>Jaqueline</h5>
+                        <p>Cargo 1</p>
+                    </div>
+
+                    <div class="col text-center">
+                        <img src="joao.png" class="rounded-circle mb-2" alt="Membro da Equipe 1" width="150">
+                        <h5>João</h5>
+                        <p>Cargo 1</p>
+                    </div>
+
+                    <div class="col text-center">
+                        <img src="jose.png" class="rounded-circle mb-2" alt="Membro da Equipe 1" width="150">
+                        <h5>José</h5>
+                        <p>Cargo 1</p>
+                    </div>
+
+                    <div class="col text-center">
+                        <img src="paula.png" class="rounded-circle mb-2" alt="Membro da Equipe 1" width="150">
+                        <h5>Paula</h5>
+                        <p>Cargo 1</p>
+                    </div>
+                </div>
+
             <!-- Título + parágrafo -->
             <!-- Linha com 5 colunas (cada uma com imagem em círculo e nome/cargo) -->
             </div>
@@ -167,10 +196,25 @@
             Doc: https://getbootstrap.com/docs/5.0/forms/overview/
         -->
         <section id="contato" class="container-fluid bg-imagem py-5">
-            <div class="container">
+        <div class="container">
             <!-- Título -->
-            <!-- Formulário com nome, e-mail, mensagem e botão -->
-            </div>
+            <h2 class="text-center">Contato</h2>
+            <form class="bg-destaque p-5">
+                <div class="mb-3">
+                    <label for="seuNome" class="form-label text-light">Nome</label>
+                    <input type="nome" class="form-control" id="exampleInputEmaili" placeholder="Nome">
+                </div>
+                <div class="mb-3">
+                    <label for="exempleInputEmail" class="form-label text-light">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmaili" placeholder="Email">
+                </div>
+                <div>
+                    <label for="inserirTexto" class="form-label text-light">Mensagem</label>
+                    <textarea name="mensagem" id="inserirTexto" cols="50" rows="5" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
         </section>
 
     </main>

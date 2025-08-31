@@ -9,7 +9,7 @@
 }
 
 .bg-imagem {
-    background-image: url(./img/planoFundo.png);
+    background-image: url(planoDeFundo.jpg);
     background-repeat: repeat;
 }
 
@@ -23,4 +23,7 @@ h1 {
     font-family: 'Lilita One', cursive;
     color: rgb(245, 242, 189);
     font-size: 25px;
+}
+h2{
+    color:antiquewhite
 }
